@@ -1,0 +1,20 @@
+{
+	"name": "mafindo-docs",
+	"version": "1.0.0",
+	"description": "Mafindo documentation for public usage",
+	"scripts": {
+		"start": "vuepress dev docs",
+		"build": "vuepress build docs"
+	},
+	"repository": "https://github.com/mafindo/mafindo.github.io",
+	"keywords": [
+		"VuePress",
+		"Mafindo",
+		"Documentation"
+	],
+	"author": "Gabriel Stevano <gabestevy@gmail.com>",
+	"license": "MIT",
+	"devDependencies": {
+		"vuepress": "1.2.0"
+	}
+}
