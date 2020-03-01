@@ -28,7 +28,7 @@ Get news list based on selected category from our Global Fast-check Database. We
 !!!!! section
 !!!! sub-section section-area
 !!! sub-section section-left
-### Closed Sub Section 1
+### Get News by Category
 Quam nulla porttitor massa id. Sed tempus urna et pharetra. Justo nec ultrices dui sapien eget mi proin. Sit amet est placerat in egestas. At ultrices mi tempus imperdiet. Arcu dui vivamus arcu felis bibendum ut. Suspendisse faucibus interdum posuere lorem ipsum dolor sit. Mattis aliquam faucibus purus in massa tempor nec feugiat nisl.
 !!!
 !!! sub-section section-right right-spacer
@@ -47,7 +47,7 @@ Quam nulla porttitor massa id. Sed tempus urna et pharetra. Justo nec ultrices d
 !!!!! section
 !!!! sub-section section-area
 !!! sub-section section-left
-### Closed Sub Section 2
+### Get Random News
 Malesuada proin libero nunc consequat interdum varius. Ultrices dui sapien eget mi proin sed libero enim. Ornare aenean euismod elementum nisi quis eleifend quam. Hendrerit dolor magna eget est lorem ipsum. Nunc congue nisi vitae suscipit tellus mauris a diam. Amet volutpat consequat mauris nunc congue nisi. Condimentum vitae sapien pellentesque habitant morbi tristique senectus et. Convallis posuere morbi leo urna molestie.
 !!!
 !!! sub-section section-right right-spacer
