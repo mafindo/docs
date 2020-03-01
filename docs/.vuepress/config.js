@@ -27,14 +27,14 @@ module.exports = {
 			  //   ]
 			},
 		],
-		logo: '../assets/img/logo.png',
+		logo: 'assets/img/logo.png',
 		nav: [
 			{ text: 'Contact', link: 'https://turnbackhoax.id/tentang-kami/kontak-kami/' },
 		],
 		
 		repo: 'mafindo/docs',
 		repoLabel: 'Contribute!',
-		
+
 		docsDir: 'docs',
 		editLinks: true,
 		docsBranch: 'master',

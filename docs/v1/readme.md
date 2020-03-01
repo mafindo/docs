@@ -2,18 +2,12 @@
 pageClass: api-document
 ---
 
-!!!!! section main-section
-!!!! sub-section section-area
-!!! sub-section section-left
-
 ## General Information
 All API Request will use base URL
 ```
 https://yudistira.turnbackhoax.id/Antihoax/
 ```
-!!!
-!!!!
-!!!!!
+<br>
 
 !!!!!! section main-section closed
 !!!!! sub-section section-area
