@@ -27,7 +27,7 @@ module.exports = {
 			  //   ]
 			},
 		],
-		logo: './docs/assets/img/logo.png',
+		logo: '/docs/assets/img/logo.png',
 		nav: [
 			{ text: 'Contact', link: 'https://turnbackhoax.id/tentang-kami/kontak-kami/' },
 		],
