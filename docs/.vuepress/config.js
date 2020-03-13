@@ -22,12 +22,12 @@ module.exports = {
 				path: '/v1/',      // optional, which should be a absolute path.
 				collapsable: false, // optional, defaults to true
 				sidebarDepth: 1,    // optional, defaults to 1
-			  //   children: [
-			  // 	'/intro'
-			  //   ]
+			    // children: [
+			  	// 	'/intro'
+			    // ]
 			},
 		],
-		logo: './docs/assets/img/logo.png',
+		logo: '/assets/img/logo.png',
 		nav: [
 			{ text: 'Contact', link: 'https://turnbackhoax.id/tentang-kami/kontak-kami/' },
 		],

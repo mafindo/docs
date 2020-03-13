@@ -5,10 +5,10 @@ pageClass: api-document
 !!!!!! section main-section
 !!!!! sub-section section-area
 !!!! sub-section section-left
-# API Reference
+# API V1 Reference
 API V1 is still active, but obsolete since it has limit to only a few function with `GET` method only. Please switch to our V2 API for better experience.
 
-Mafindo Public API use API Key for Authentication. Please [contact](https://turnbackhoax.id/tentang-kami/kontak-kami/) us to get your own API Key.
+Mafindo Public API use API Key for Authentication. Please refer to [Authorization](/#authorization) section.
 !!!!
 !!!! sub-section section-right right-spacer
 +++ section-notes Base URL
@@ -126,9 +126,9 @@ All Request will return an array of article/news object with property explained 
 !!!! sub-section section-area
 !!! sub-section section-left
 
-## Request Query Path Variables
+## Request Path
 
-Definition of Query Path Variables for the request URL
+When you do request to our API, you will find this general definition of Path Variables for the request URL will be used in API Endpoints
 
 <div class="parameter-container">
 
@@ -152,7 +152,7 @@ Definition of Query Path Variables for the request URL
 ```
 https://yudistira.turnbackhoax.id/Antihoax/latest/LIMIT/API_KEY
 
-https://yudistira.turnbackhoax.id/Antihoax/id/:ID/YOUR API KEY
+https://yudistira.turnbackhoax.id/Antihoax/id/:ID/API_KEY
 
 ```
 +++
@@ -184,7 +184,7 @@ Get news list based on selected get news method from our Global Fast-check Datab
 !!!! sub-section section-area
 !!! sub-section section-left
 ### Get Latest News
-This API Endpoint will allow you to get latest addition from our Global Fast-Check Database.
+Get latest news-item addition from our Global Fast-Check Database.
 !!!
 !!! sub-section section-right right-spacer
 +++ section-codes <span><strong class="get">GET</strong> /latest/LIMIT/API_KEY</span>
@@ -206,7 +206,7 @@ curl --request GET \
 !!!! sub-section section-area
 !!! sub-section section-left
 ### Get Random News
-This API Endpoint will allow you to get random news item from our Global Fast-Check Database.
+Get random news item with specified limit.
 !!!
 !!! sub-section section-right right-spacer
 +++ section-codes <span><strong class="get">GET</strong> /random/LIMIT/API_KEY</span>
@@ -223,40 +223,72 @@ curl --request GET \
 !!!
 !!!!
 !!!!!
+
+!!!!! section
+!!!! sub-section section-area
+!!! sub-section section-left
+### Get News by ID
+Get specific news item by providing expected ID in the URL Path
+!!!
+!!! sub-section section-right right-spacer
++++ section-codes <span><strong class="get">GET</strong> /random/LIMIT/API_KEY</span>
+:::: tabs :options="{ useUrlFragment: false }"
+::: tab "Curl"
+```bash
+curl --request GET \
+  --url https://yudistira.turnbackhoax.id/Antihoax/id/1/123456 \
+  --header 'Accept: application/json'
+```
+:::
+::::
++++
+!!!
+!!!!
+!!!!!
 ===
+!!!!!!
 
 !!!!!! section main-section
 !!!!! sub-section section-area
 !!!! sub-section section-left
 ## Search News
-Quam nulla porttitor massa id. Sed tempus urna et pharetra. Justo nec ultrices dui sapien eget mi proin. Sit amet est placerat in egestas. At ultrices mi tempus imperdiet. Arcu dui vivamus arcu felis bibendum ut. Suspendisse faucibus interdum posuere lorem ipsum dolor sit. Mattis aliquam faucibus purus in massa tempor nec feugiat nisl.
+Search News by specifying the criteria in URL path, below are the possible options to be used as search criteria.
+
+#### Search Field Options 
+<div class="parameter-container">
+
+- `title`
+
+  Search news item by its title 
+
+- `source_link`
+
+  Search news item by source URL
+
+- `content`
+
+  Search news item by content of the news
+
+- `tags`
+
+  Search news item by tags applied to the news item
+
+</div>
 !!!!
 !!!! sub-section section-right right-spacer
-+++ section-notes Method List
-- `GET` /api/path/entity {.get}
-- `POST` /api/path/entity {.post}
-- `UPDATE` /api/path/entity/:id {.update}
-- `DELETE` /api/path/entity/:id {.delete}
-+++
-!!!!
-!!!!!
 
-!!!!! section
-!!!! sub-section section-area
-!!! sub-section section-left
-### Sub Section
-Quam nulla porttitor massa id. Sed tempus urna et pharetra. Justo nec ultrices dui sapien eget mi proin. Sit amet est placerat in egestas. At ultrices mi tempus imperdiet. Arcu dui vivamus arcu felis bibendum ut. Suspendisse faucibus interdum posuere lorem ipsum dolor sit. Mattis aliquam faucibus purus in massa tempor nec feugiat nisl.
-!!!
-!!! sub-section section-right right-spacer
-+++ section-codes
-```json
-{
-    "param_key": "value",
-    "param_index": 12345
-}
++++ section-codes <span><strong class="get">GET</strong> /SEARCH_FIELD/SEARCH_VALUE/API_KEY</span>
+:::: tabs :options="{ useUrlFragment: false }"
+::: tab "Curl"
+```bash
+curl --request GET \
+  --url https://yudistira.turnbackhoax.id/Antihoax/tags/presiden/123456 \
+  --header 'Accept: application/json'
 ```
+:::
+::::
 +++
-!!!
+
 !!!!
 !!!!!
 

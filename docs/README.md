@@ -10,5 +10,6 @@ Welcome to Mafindo public API, where you can use share and reuse our Global Fast
 Please use API V2 for more better API structure.
 :::
 
-## Credentials
-You may have your own API Credentials by requesting assistance to our support team at our [contact page](https://turnbackhoax.id/tentang-kami/kontak-kami/)
+## Authorization
+The Mafindo Public API API uses API keys to authenticate requests.    
+You can get yours by requesting assistance to our support team through our [contact page](https://turnbackhoax.id/tentang-kami/kontak-kami/)
