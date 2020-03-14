@@ -8,7 +8,9 @@ module.exports = {
 		smoothScroll: true,
 		activeHeaderLinks: true,
 		nextLinks: false,
-    	prevLinks: false,
+		prevLinks: false,
+		searchMaxSuggestions: 10,
+		lastUpdated: 'Last Updated',
 		sidebar: [
 			['/', 'Get Started'],
 			{
