@@ -7,7 +7,7 @@ pageClass: api-document
 Welcome to Mafindo public API, where you can use share and reuse our Global Fast-Check Database to fight fake news or misleading news out there. This initiative is open to all developers or any parties which want to help us in our fight.
 
 ::: tip
-Please use API V2 for more better API structure.
+Please use API V2 for better API structure.
 :::
 
 ## Authorization
