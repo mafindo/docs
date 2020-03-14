@@ -5,7 +5,7 @@ pageClass: api-document
 !!!!!! section main-section
 !!!!! sub-section section-area
 !!!! sub-section section-left
-# API V1 Reference
+## Overview
 API V1 is still active, but obsolete since it has limit to only a few function with `GET` method only. Please switch to our V2 API for better experience.
 
 Mafindo Public API use API Key for Authentication. Please refer to [Authorization](/#authorization) section.
@@ -21,9 +21,9 @@ https://yudistira.turnbackhoax.id/Antihoax/
 !!!! sub-section section-area
 !!! sub-section section-left
 
-## Response
+## The News Object
 
-All Request will return an array of article/news object with property explained below
+#### Parameters
 
 <div class="parameter-container">
 
@@ -122,45 +122,6 @@ All Request will return an array of article/news object with property explained 
 !!!!
 !!!!!
 
-!!!!! section main-section
-!!!! sub-section section-area
-!!! sub-section section-left
-
-## Request Path
-
-When you do request to our API, you will find this general definition of Path Variables for the request URL will be used in API Endpoints
-
-<div class="parameter-container">
-
-- `LIMIT`
-
-  limit of news item to be be requested
-
-- `API_KEY`
-
-  Your registered API Key
-
-- `:ID`
-
-  Specific News Item ID
-
-</div>
-
-!!!
-!!! sub-section section-right right-spacer
-+++ section-codes Example Query URL
-```
-https://yudistira.turnbackhoax.id/Antihoax/latest/LIMIT/API_KEY
-
-https://yudistira.turnbackhoax.id/Antihoax/id/:ID/API_KEY
-
-```
-+++
-!!!
-!!!!
-!!!!!
-
-
 !!!!!!
 
 
@@ -185,6 +146,26 @@ Get news list based on selected get news method from our Global Fast-check Datab
 !!! sub-section section-left
 ### Get Latest News
 Get latest news-item addition from our Global Fast-Check Database.
+
+#### URL Path Parameters 
+---
+
+<div class="parameter-container">
+
+- `LIMIT`
+
+  limit of news item to be fetched
+
+- `API_KEY`
+
+  Your API Key
+
+</div>
+
+#### Returns
+---
+Returns the latest list of news 
+
 !!!
 !!! sub-section section-right right-spacer
 +++ section-codes <span><strong class="get">GET</strong> /latest/LIMIT/API_KEY</span>
@@ -207,6 +188,26 @@ curl --request GET \
 !!! sub-section section-left
 ### Get Random News
 Get random news item with specified limit.
+
+#### URL Path Parameters 
+---
+
+<div class="parameter-container">
+
+- `LIMIT`
+
+  limit of news item to be fetched
+
+- `API_KEY`
+
+  Your API Key
+
+</div>
+
+#### Returns
+---
+Returns the latest list of news 
+
 !!!
 !!! sub-section section-right right-spacer
 +++ section-codes <span><strong class="get">GET</strong> /random/LIMIT/API_KEY</span>
@@ -229,9 +230,29 @@ curl --request GET \
 !!! sub-section section-left
 ### Get News by ID
 Get specific news item by providing expected ID in the URL Path
+
+#### URL Path Parameters 
+---
+
+<div class="parameter-container">
+
+- `:ID`
+
+  ID of the news
+
+- `API_KEY`
+
+  Your API Key
+
+</div>
+
+#### Returns
+---
+Returns the latest list of news 
+
 !!!
 !!! sub-section section-right right-spacer
-+++ section-codes <span><strong class="get">GET</strong> /random/LIMIT/API_KEY</span>
++++ section-codes <span><strong class="get">GET</strong> /id/:ID/API_KEY</span>
 :::: tabs :options="{ useUrlFragment: false }"
 ::: tab "Curl"
 ```bash
@@ -252,9 +273,34 @@ curl --request GET \
 !!!!! sub-section section-area
 !!!! sub-section section-left
 ## Search News
-Search News by specifying the criteria in URL path, below are the possible options to be used as search criteria.
+Search News by specifying the criteria in URL path.
+
+#### URL Path Parameters 
+---
+
+<div class="parameter-container">
+
+- `SEARCH_FIELD`
+
+  Search criteria, refer to [search field options](/v1/#search-field-options) for more detail.
+
+- `SEARCH_VALUE`
+
+  The value of search criteria
+
+- `API_KEY`
+
+  Your API Key
+
+</div>
+
+#### Returns
+---
+Returns list of news based on the search criteria
 
 #### Search Field Options 
+---
+
 <div class="parameter-container">
 
 - `title`
