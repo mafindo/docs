@@ -381,7 +381,7 @@ Search News based on search criteria. You can retrieve the list of news or total
 
   Limit of news item to show, useful for get list of news item.
 
-- `total` *boolean* ~~optional~~
+- `total` *integer* ~~optional~~
 
   If you send this in request data body, you will get total records count of search results instead of the list.
 
