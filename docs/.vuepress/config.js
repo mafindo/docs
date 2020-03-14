@@ -6,25 +6,22 @@ module.exports = {
 	themeConfig: {
 		displayAllHeaders: true,
 		smoothScroll: true,
-		activeHeaderLinks: false,
+		activeHeaderLinks: true,
 		nextLinks: false,
     	prevLinks: false,
 		sidebar: [
 			['/', 'Get Started'],
 			{
 			  title: 'API V2',
-			  path: '/v2/',      // optional, which should be a absolute path.
-			  collapsable: false, // optional, defaults to true
-			  sidebarDepth: 1,    // optional, defaults to 1
+			  path: '/v2/',
+			  collapsable: false,
+			  sidebarDepth: 1,
 			},
 			{
-				title: 'API V1',   // required
-				path: '/v1/',      // optional, which should be a absolute path.
-				collapsable: false, // optional, defaults to true
-				sidebarDepth: 1,    // optional, defaults to 1
-			    // children: [
-			  	// 	'/intro'
-			    // ]
+				title: 'API V1',
+				path: '/v1/',
+				collapsable: false,
+				sidebarDepth: 1
 			},
 		],
 		logo: '/assets/img/logo.png',
