@@ -15,7 +15,7 @@
 	"author": "Gabriel Stevano <gabestevy@gmail.com>",
 	"license": "MIT",
 	"devDependencies": {
-		"vuepress": "1.2.0",
+		"vuepress": "^1.4.0",
 		"vuepress-theme-apidoc": "https://github.com/dyingAngel/vuepress-theme-apidoc"
 	}
 }
